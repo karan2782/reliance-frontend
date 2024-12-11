@@ -1,0 +1,9 @@
+.slick-slider{
+    position: relative;
+}
+
+.slick-dots{
+   
+    position: absolute;
+    bottom: 5px;
+}
