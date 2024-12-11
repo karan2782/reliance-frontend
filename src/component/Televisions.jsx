@@ -1,17 +1,11 @@
 import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { useQuery } from "@tanstack/react-query";
+
 import React from "react";
 import SliderEffect from "./SliderEffect";
+import data from "../../db.json"
 
 function Televisions() {
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["televisions"],
-    queryFn: async () => {
-      const res = await fetch(`http://localhost:4000/televisions`);
-      const data = await res.json();
-      return data;
-    },
-  });
+  
   
   return (
     <Box pt="6">
@@ -31,8 +25,9 @@ function Televisions() {
       </HStack>
       <Box p="6" boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px">
         <SliderEffect slidesToShow={4} slidesToScroll={2}>
-          {data?.map((ele) => (
+          {data?.televisions?.map((ele) => (
             <Flex
+            
               boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
               p="10px"
               key={ele.id}

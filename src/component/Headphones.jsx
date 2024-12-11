@@ -1,17 +1,11 @@
 import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { useQuery } from "@tanstack/react-query";
+
 import React from "react";
 import SliderEffect from "./SliderEffect";
 import "./Headphone.css";
+import data from "../../db.json"
 function Headphones() {
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["headphones"],
-    queryFn: async () => {
-      const res = await fetch("http://localhost:4000/headphones");
-      const data = res.json();
-      return data;
-    },
-  });
+  
 
 
   return (
@@ -32,7 +26,7 @@ function Headphones() {
       </HStack>
       <Box p="6" boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px">
         <SliderEffect slidesToShow={4} slidesToScroll={2}>
-          {data?.map((ele) => (
+          {data?.headphones?.map((ele) => (
             <Flex
               direction="column"
               key={ele.id}

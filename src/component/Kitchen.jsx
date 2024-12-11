@@ -1,18 +1,11 @@
 import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
-import { useQuery } from "@tanstack/react-query";
+
 import React from "react";
 import SliderEffect from "./SliderEffect";
+import data from "../../db.json"
 
 function Kitchen() {
-  const { data, isLoading, isError, error } = useQuery({
-    queryKey: ["kitchen"],
-    queryFn: async () => {
-      const res = await fetch(`http://localhost:4000/kitchen`);
-      const data = await res.json();
-      return data;
-    },
-  });
-  console.log(data);
+ 
 
   return (
     <Box pt="6">
@@ -32,7 +25,7 @@ function Kitchen() {
       </HStack>
       <Box p="6" boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px">
         <SliderEffect slidesToShow={4} slidesToScroll={2}>
-          {data?.map((ele) => (
+          {data?.kitchen?.map((ele) => (
             <Flex
               boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
               p="10px"
