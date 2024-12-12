@@ -5,19 +5,12 @@ import SliderEffect from "./SliderEffect";
 import data from "../../db.json"
 
 function Computers() {
-  // const { data, isLoading, isError, error } = useQuery({
-  //   queryKey: ["computers"],
-  //   queryFn: async () => {
-  //     const res = await fetch(`http://localhost:4000/computers`);
-  //     const data = await res.json();
-  //     return data;
-  //   },
-  // });
+  
 
   return (
     <Box pt="6">
       <HStack pl="6" py="5" backgroundColor="gray.100">
-        <Text fontSize="17px" fontWeight="500">
+        <Text fontSize={{lg:"17px", md:"17px", sm:"12px", base:"10px"}} fontWeight="500">
           Best Selling Computers | 3hr Instant Delivery
         </Text>{" "}
         <Button

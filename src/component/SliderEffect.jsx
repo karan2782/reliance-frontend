@@ -62,8 +62,7 @@ const PrevArrow = ({ onClick }) => (
               slidesToScroll: 3,
               infinite: true,
               dots: true,
-              prevArrow:false,
-        nextArrow:false
+              
             }
           },
           {
@@ -72,8 +71,7 @@ const PrevArrow = ({ onClick }) => (
               slidesToShow: 2,
               slidesToScroll: 2,
               initialSlide: 2,
-              prevArrow:false,
-              nextArrow:false
+              
             }
           },
           {

@@ -9,7 +9,7 @@ function Cameras() {
   return (
     <Box pt="6">
       <HStack pl="6" py="5" backgroundColor="gray.100">
-        <Text fontSize="17px" fontWeight="500">
+        <Text fontSize={{lg:"17px", md:"17px", sm:"12px", base:"10px"}} fontWeight="500">
           Best Selling Cameras | 3hr Instant Delivery
         </Text>{" "}
         <Button

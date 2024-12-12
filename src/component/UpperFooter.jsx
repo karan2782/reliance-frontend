@@ -5,8 +5,8 @@ import { ImYoutube2 } from "react-icons/im";
 
 function UpperFooter() {
   return (
-    <Box pt="6" pl="6" color="white" backgroundColor="#003380" py='6'>
-      <Grid templateColumns="repeat(4, 1fr)" >
+    <Box pt="6" pl="6" pr='3' color="white" backgroundColor="#003380" py="6" display={{sm:"none", md:"block", lg:'block', base:"none"}}>
+      <Grid templateColumns="repeat(4, 1fr)">
         <Stack>
           <Text fontSize="20px" fontWeight="bold">
             {" "}
@@ -68,7 +68,11 @@ function UpperFooter() {
 
       <HStack columnGap="220px">
         <Stack>
-          <Text textTransform="uppercase" fontSize="19px" fontWeight="bold">
+          <Text
+            textTransform="uppercase"
+            fontSize={{ lg: "19px", md: "15px", sm: "12px" }}
+            fontWeight={{ lg: "bold", md: "400", sm: "300" }}
+          >
             Follow us
           </Text>
           <HStack fontSize="26px">
@@ -78,16 +82,20 @@ function UpperFooter() {
         </Stack>
 
         <Stack>
-          <Text fontSize="19px" fontWeight="bold" textTransform="uppercase">
+          <Text
+            fontSize={{ lg: "19px", md: "15px", sm: "12px" }}
+            fontWeight={{ lg: "bold", md: "400", sm: "300" }}
+            textTransform="uppercase"
+          >
             Experience digital app on mobile
           </Text>
           <HStack>
             <Image
-              width="122px"
+              width={{ lg: "122px", md: "61px", sm: "32px" }}
               src="https://www.reliancedigital.in/build/client/images/google_play_store.png"
             />
             <Image
-              width="122px"
+              width={{ lg: "122px", md: "61px", sm: "32px" }}
               src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png"
             />
           </HStack>

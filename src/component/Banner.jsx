@@ -35,7 +35,7 @@ const bannerArr = [
 function Banner() {
   
   return (
-    <Box>
+    <Box mt={{lg:'0', md:'11'}}>
       <SliderEffect slidesToShow={1} slidesToScroll={1} autoplay={true} dots={true} >
         {bannerArr.map((ele, ind) => (
           <Box key={ind} >
