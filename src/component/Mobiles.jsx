@@ -27,7 +27,7 @@ function Mobiles() {
         <SliderEffect slidesToShow={4} slidesToScroll={2}>
       {data?.mobiles?.map((ele) => (
         <Flex boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px" p='10px' key={ele.id} direction="column" height='350px'   width='200px' align='center' justify='space-between'>
-          <Box width="180px" m='auto'>
+          <Box width="180px" m='auto' mb='70px' >
             <Image src={ele.img} width="100%" />
           </Box>
           <Box width='90%' display='flex' flexDirection='column' gap='10px' mt='7'>

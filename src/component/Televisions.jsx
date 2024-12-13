@@ -37,7 +37,7 @@ function Televisions() {
               align="center"
               justify="space-between"
             >
-              <Box width="180px" m="auto">
+              <Box width="180px" m="auto" mb='70px'>
                 <Image src={ele.img} width="100%" />
               </Box>
               <Box

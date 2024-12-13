@@ -15,7 +15,9 @@ function HoverMenu({menu}) {
             <HoverCardTrigger unstyled={true} py='2'px='2' asChild backgroundColor={open?'#E42529':''} > 
                 <Link  href="#" color='white' fontWeight='bold' fontSize='14px' textTransform='uppercase'> <Flex align='center' >{menu.title} <IoIosArrowDown /></Flex></Link>
             </HoverCardTrigger>
-            <HoverCardContent backgroundColor='#003380' color='white' >
+            <HoverCardContent backgroundColor='#003380' color='white' width='100%' >
+                <Box  >{menu.content}</Box>
+                <Box  >{menu.content}</Box>
                 <Box  >{menu.content}</Box>
             </HoverCardContent>
         </HoverCardRoot>

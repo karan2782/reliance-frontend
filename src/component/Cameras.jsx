@@ -34,9 +34,10 @@ function Cameras() {
               width="200px"
               align="center"
               justify="space-between"
+              
             >
-              <Box width="180px" m="auto">
-                <Image src={ele.img} width="100%" />
+              <Box width="180px" m="auto" mb='70px'>
+                <Image  src={ele.img} width="100%" />
               </Box>
               <Box
                 width="90%"
