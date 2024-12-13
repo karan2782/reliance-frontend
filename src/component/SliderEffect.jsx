@@ -8,7 +8,7 @@ const PrevArrow = ({ onClick }) => (
       aria-label="Previous"
       position="absolute"
       top="50%"
-      left="10px"
+      left="0px"
       transform="translateY(-50%)"
       zIndex="10"
       onClick={onClick}
@@ -16,6 +16,7 @@ const PrevArrow = ({ onClick }) => (
       backgroundColor='rgba(245, 235, 235, 0.26)'
       borderRadius='none'
       height='100px'
+      
 
       boxShadow= 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px'
     > <IoIosArrowBack/> </IconButton>
@@ -26,7 +27,7 @@ const PrevArrow = ({ onClick }) => (
       aria-label="Next"
       position="absolute"
       top="50%"
-      right="10px"
+      right="0px"
       transform="translateY(-50%)"
       zIndex="10"
       
@@ -71,6 +72,8 @@ const PrevArrow = ({ onClick }) => (
               slidesToShow: 2,
               slidesToScroll: 2,
               initialSlide: 2,
+              prevArrow:false,
+              nextArrow:false
               
             }
           },

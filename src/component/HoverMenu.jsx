@@ -11,7 +11,7 @@ import { IoIosArrowDown } from "react-icons/io";
 function HoverMenu({menu}) {
     const [open, setOpen] = useState(false)
   return (
-    <HoverCardRoot   open={open} onOpenChange={(e)=>setOpen(e.open)} >
+    <HoverCardRoot   open={open} onOpenChange={(e)=>setOpen(e.open)} onMouseLeave={()=>setOpen(false)} >
             <HoverCardTrigger unstyled={true} py='2'px='2' asChild backgroundColor={open?'#E42529':''} > 
                 <Link  href="#" color='white' fontWeight='bold' fontSize='14px' textTransform='uppercase'> <Flex align='center' >{menu.title} <IoIosArrowDown /></Flex></Link>
             </HoverCardTrigger>
