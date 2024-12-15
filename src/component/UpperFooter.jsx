@@ -5,7 +5,7 @@ import { ImYoutube2 } from "react-icons/im";
 
 function UpperFooter() {
   return (
-    <Box pt="6" pl="6" pr='3' color="white" backgroundColor="#003380" py="6" display={{sm:"none", md:"block", lg:'block', base:"none"}}>
+    <Box pt="6" pl="6" pr='3' color="white" backgroundColor="#003380" py="6" display={{sm:"none", md:"none", lg:'block', base:"none"}}>
       <Grid templateColumns="repeat(4, 1fr)">
         <Stack>
           <Text fontSize="20px" fontWeight="bold">

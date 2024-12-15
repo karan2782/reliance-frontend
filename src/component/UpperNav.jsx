@@ -15,7 +15,7 @@ import { IoSearch } from "react-icons/io5";
 
 function UpperNav() {
   return (
-    <Box backgroundColor="#E42529" pb="2" >
+    <Box backgroundColor="#E42529" pb="2"  >
       <HStack
         backgroundColor="#E42529"
         justify="end"

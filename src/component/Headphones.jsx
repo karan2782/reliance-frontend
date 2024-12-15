@@ -3,15 +3,19 @@ import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import SliderEffect from "./SliderEffect";
 import "./Headphone.css";
-import data from "../../db.json"
+import data from "../../db.json";
+import { useNavigate } from "react-router-dom";
+
+
 function Headphones() {
-  
-
-
+  const navigate = useNavigate()
   return (
     <Box>
       <HStack pl="6" py="5" backgroundColor="gray.100">
-        <Text fontSize={{lg:"17px", md:"17px", sm:"12px", base:"10px"}} fontWeight="500">
+        <Text
+          fontSize={{ lg: "17px", md: "17px", sm: "12px", base: "10px" }}
+          fontWeight="500"
+        >
           Best Selling audio | 3hr Instant Delivery
         </Text>{" "}
         <Button
@@ -20,6 +24,7 @@ function Headphones() {
           py="1"
           backgroundColor="blue.800"
           fontSize="14px"
+          onClick={()=> navigate("/Headphones")}
         >
           view all
         </Button>{" "}
@@ -35,7 +40,7 @@ function Headphones() {
               alignItems="center"
               borderRadius="10px"
               boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-              width='200px'
+              width="200px"
             >
               <Box width="180px" margin="auto">
                 <Image

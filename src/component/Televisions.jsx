@@ -3,9 +3,10 @@ import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import SliderEffect from "./SliderEffect";
 import data from "../../db.json"
+import { useNavigate } from "react-router-dom";
 
 function Televisions() {
-  
+  const navigate = useNavigate()
   
   return (
     <Box pt="6">
@@ -19,6 +20,7 @@ function Televisions() {
           py="1"
           backgroundColor="blue.800"
           fontSize="14px"
+          onClick={()=>navigate('/Televisions')}
         >
           view all
         </Button>{" "}
