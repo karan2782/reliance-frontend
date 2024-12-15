@@ -7,7 +7,7 @@ import { Box } from "@chakra-ui/react";
 function NavPage() {
   return (
 
-   <Box position='sticky' top='0' zIndex='1'>
+   <Box position='sticky' top='0' zIndex='70'>
    <UpperNav />
    <LowerNav/>
 

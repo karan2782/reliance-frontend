@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import { HStack, Box, Link, Strong } from "@chakra-ui/react";
+import { HStack, Box, Link, Strong, Stack } from "@chakra-ui/react";
 import HoverMenu from "./HoverMenu";
+import { FaHome, FaPhoneAlt } from "react-icons/fa";
+
+import { IoIosQrScanner } from "react-icons/io";
 
 const menuArr = [
   { title: "Mobile & Tablet", content: "content" },
@@ -15,6 +18,7 @@ const menuArr = [
 ];
 function LowerNav() {
   return (
+    <>
     <HStack
       backgroundColor="#003380"
       px="50px"
@@ -25,6 +29,8 @@ function LowerNav() {
         <HoverMenu key={menu.title} menu={menu} />
       ))}
     </HStack>
+    
+    </>
   );
 }
 
