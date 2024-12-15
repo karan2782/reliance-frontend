@@ -81,14 +81,14 @@ function UpperNav() {
               </DrawerTrigger>
               <DrawerContent>
                 <Stack pt='2' >
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
-                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack  width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack  width='95%' justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack width='95%'  justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack  width='95%' justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
                  
                 </Stack>
               </DrawerContent>
