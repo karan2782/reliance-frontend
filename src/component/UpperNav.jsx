@@ -7,15 +7,29 @@ import {
   Input,
   Link,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import { InputGroup } from "../components/ui/input-group";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
+import {
+  DrawerActionTrigger,
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerRoot,
+  DrawerTitle,
+  DrawerTrigger,
+} from "../components/ui/drawer";
+import { IoIosArrowDown } from "react-icons/io";
 
 function UpperNav() {
   return (
-    <Box backgroundColor="#E42529" pb="2"  >
+    <Box backgroundColor="#E42529" pb="2">
       <HStack
         backgroundColor="#E42529"
         justify="end"
@@ -37,6 +51,7 @@ function UpperNav() {
           fontSize="14px"
           pr="4px"
           borderRight="1px solid white"
+
         >
           Buying Guides
         </Link>
@@ -49,17 +64,44 @@ function UpperNav() {
         backgroundColor="#E42529"
         justify="space-between"
         px="50px"
-        direction={{base:'column', sm:'column', md:'column', lg:'row'}}
-        gap={{sm:"20px", md:"20px"}}
-        align='center'
+        direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
+        gap={{ sm: "20px", md: "20px" }}
+        align="center"
       >
-        <Box>
-          {" "}
-          <Image src="	https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" />{" "}
-        </Box>
+        <HStack align='center' gap='20px'>
+          
+            <DrawerRoot placement='start' size={{md:'lg', sm:'sm', base:'xs'}}>
+              <DrawerBackdrop />
+              <DrawerTrigger asChild  >
+                <Stack gap='1' cursor='pointer' lg={{display:'none'}}>
+                  <Box border='1.9px solid white' width='22px'></Box>
+                  <Box border='1.9px solid white' width='22px'></Box>
+                  <Box border='1.9px solid white' width='22px'></Box>
+                </Stack>
+              </DrawerTrigger>
+              <DrawerContent>
+                <Stack pt='2' >
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                  <HStack justify='center' textAlign='center' border='1px solid gray' p='2'>Mobile & Tablet <IoIosArrowDown /> </HStack>
+                 
+                </Stack>
+              </DrawerContent>
+            </DrawerRoot>
+          
+          <Box>
+            {" "}
+            <Image src="	https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" />{" "}
+          </Box>
+        </HStack>
 
         <InputGroup
-          flex="0.6"
+          flex="1"
           endElement={
             <Button
               px="2"
@@ -73,7 +115,7 @@ function UpperNav() {
           backgroundColor="white"
           rounded="full"
           border="none"
-          height='fit-content'
+          height="fit-content"
         >
           <Input
             px="2"
